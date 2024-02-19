@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/events-map.iml" filepath="$PROJECT_DIR$/.idea/events-map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/in-map.iml" filepath="$PROJECT_DIR$/.idea/in-map.iml" />
     </modules>
   </component>
 </project>
