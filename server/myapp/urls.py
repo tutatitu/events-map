@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import NewsViewSet, UsersViewSet, FeedbackViewSet
+from .views import NewsView, UsersView, FeedbackView
 
 urlpatterns = [
-    path('news/', NewsViewSet.as_view, name='news'),
-    path('users/', UsersViewSet.as_view, name='users'),
-    path('feedback/', FeedbackViewSet.as_view, name='feedback'),
+    path('news/', NewsView().get, name='news'),
+    path('users/', UsersView().get, name='users'),
+    path('feedback/', FeedbackView().get, name='feedback'),
 ]

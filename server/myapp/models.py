@@ -5,15 +5,15 @@ class Users(models.Model):
     id = models.AutoField(primary_key=True)
     nickname = models.CharField(max_length=255)
     hash_password = models.CharField(max_length=255)
-    test = models.CharField(max_length=255)
+
     def __str__(self):
         return self.nickname
 
     class Meta:
         verbose_name_plural = "Users"
         verbose_name = "User"
-        managed = True
-        db_table = 'myapp_users'
+        # managed = True
+        # db_table = 'myapp_users'
         # app_label = 'myapp'
 
 
@@ -32,7 +32,7 @@ class News(models.Model):
     class Meta:
         verbose_name_plural = "News"
         verbose_name = "News"
-        managed = True
+        # managed = True
         # db_table = 'News'
         # app_label = 'myapp'
 
@@ -50,6 +50,6 @@ class Feedback(models.Model):
     class Meta:
         verbose_name_plural = "Feedback"
         verbose_name = "Feedback"
-        managed = True
+        # managed = True
         # db_table = 'Feedback'
         # app_label = 'myapp'
