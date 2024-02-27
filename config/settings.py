@@ -35,10 +35,9 @@ INSTALLED_APPS += [
 ]
 
 # apps
-# INSTALLED_APPS += [
-#     'api',
-#     'common',
-# ]
+INSTALLED_APPS += [
+    'api',
+]
 
 # Custom user model
 # AUTH_USER_MODEL = 'users.User'
@@ -113,7 +112,7 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
-    'DEFAULT_PAGINATION_CLASS': 'common.pagination.BasePagination',
+    # 'DEFAULT_PAGINATION_CLASS': 'common.pagination.BasePagination',
 }
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -160,8 +159,8 @@ CSRF_COOKIE_SECURE = False
 # DRF SPECTACULAR
 ######################
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'Call Helper',
-    'DESCRIPTION': 'Call Helper',
+    'TITLE': 'In map',
+    'DESCRIPTION': 'In map',
     'VERSION': '1.0.0',
 
     'SERVE_PERMISSIONS': [
