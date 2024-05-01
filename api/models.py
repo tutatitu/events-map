@@ -34,7 +34,7 @@ class News(models.Model):
 class Events(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=255)
-    event_date = models.DateField()
+    event_date = models.DateTimeField()
     address = models.TextField()
     url = models.TextField()
     img = models.TextField()
