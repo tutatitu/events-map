@@ -9,7 +9,7 @@ class News(models.Model):
     address = models.TextField()
     url = models.TextField()
     img = models.TextField()
-
+    priority = models.IntegerField()
     def __str__(self):
         return self.title
 
